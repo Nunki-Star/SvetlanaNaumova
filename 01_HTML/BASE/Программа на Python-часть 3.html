@@ -69,16 +69,16 @@
         print '%d - %d = %d ' % (1,2,1-2)</code>
     <--!как правильно-->
 
-    <p><font face="courier new">print '\n'<br />
+    <code><pre>print '\n'<br />
         print '%d + %d = %d ' % (1,4,1+4)<br />
         print '%d * %d = %d ' % (1,4,1*4)<br />
-        print '%d - %d = %d ' % (1,4,1-4)</font></p>
+        print '%d - %d = %d ' % (1,4,1-4)</pre>></code>
 
-    <p><font face="courier new">print '\n'<br />
+    <code><pre>print '\n'<br />
         print '%d + %d = %d ' % (10,5,10+5)<br />
         print '%d * %d = %d ' % (10,5,10*5)<br />
         print '%d - %d = %d ' % (10,5,10-5)<br />
-        print '\n'</font></p>
+        print '\n'</pre></code>
 
     <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
         написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
@@ -89,7 +89,7 @@
         необходимо завершить двоеточием. Код функции набирается с отступом. Наш
         улучшенный простой пример <u>(№2)</u> показан ниже.</p>
 
-    <p><font face = "courier new">#silly example 2...still silly, but better
+    <code><pre>#silly example 2...still silly, but better
         def DoTwo(num1,num2):<br />
         
         print '%d + %d = %d ' % (num1,num2,num1+num2)<br />
@@ -99,7 +99,7 @@
         print '\n'<br />
         DoTwo(1,2)<br />
         DoTwo(1,4)<br />
-        DoTwo(10,5)</font></p>
+        DoTwo(10,5)</pre></code>
 
     <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет чтолибо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
         программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
