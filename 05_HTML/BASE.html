@@ -6,9 +6,10 @@
     <title>Base</title>
 </head>
 <body>
-    <table>
+    <table width="100%">
         <tr>
-            <td width="700px"><b>Простая форма поиска с вариантами:</b>
+            
+            <td><b>Простая форма поиска с вариантами:</b>
            
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
@@ -16,21 +17,19 @@
                         <legend>Строка поиска</legend>
                         <input type="search" name="poisk" maxlength="10"/>
                         <input type="submit" value="Искать"/><br>
-                        <input type="radio" name="searchplace" value="website" checked="checked"/>на сайте
+                        <input type="radio" name="searchplace" value="website" checked="checked"/></p>на сайте
                         <input type="radio" name="searchplace" value="google" checked="checked"/>в google
                     </fieldset>
                 
                 </form>
-            </td>   
-    
-        
-            <td width="700px"><b>Простая форма поиска с вариантами:</b>
-            
+            </td> 
+
+            <td><b>Простая форма поиска с вариантами:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
                         <legend>Строка поиска</legend>
-                        <input type="search" name="poisk" maxlength="10" placeholder="обязательное поле"required maxlenght="10"/>*
+                        <input type="search" name="poisk" maxlength="10" placeholder="обязательное поле" required="required"/>*
                         <input type="submit" value="Искать"/><br>
                         <input type="radio" name="searchplace" value="website" checked="checked"/>на сайте
                         <input type="radio" name="searchplace" value="google" checked="checked"/>в google
@@ -41,7 +40,7 @@
         </tr>
 
         <tr>
-            <td width="700px"><b>Простая форма авторизации:</b>
+            <td><b>Простая форма авторизации:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
@@ -58,7 +57,7 @@
             </td>   
     
         
-            <td width="700px"><b>Опрос(голосование):</b>
+            <td><b>Опрос(голосование):</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
 
                     <fieldset>
@@ -77,7 +76,7 @@
         </tr>
 
         <tr>
-            <td width="700px"><b>Отзыв:</b>
+            <td><b>Отзыв:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
@@ -94,7 +93,7 @@
             </td>   
     
         
-            <td width="700px"><b>Выпадающий и мульти списки:</b>
+            <td><b>Выпадающий и мульти списки:</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
@@ -114,7 +113,7 @@
                                 <option value="4" selected="selected">Москва</option>
                                 <option value="5" selected="selected">Рязань</option>
                                 <option value="6" selected="selected">Магадан</option> 
-                        </optgroup>  
+                            </optgroup>  
                         </select>
 
                 </fieldset>
@@ -124,28 +123,30 @@
         </tr>
 
         <tr>
-            <td width="700px"><b>Загрузка файла на сервер:</b>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
+            <td><b>Загрузка файла на сервер:</b>
+                <form enctype="multipart/form-data"  action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
                         <legend>Upload</legend>
-                        <input type="text">
+                        <input type="file" name="ff"><br>
+                        <label for="submit">Срок хранения(года):</label><br>
+                        <input type="text" name="" required="required/>"/>
+                        <input type="submit" value="загрузить"></p>
+                        
                     </fieldset>
                 
                 </form>
             </td>   
     
         
-            <td width="700px"><b>Валидация данных HTML5</b>
+            <td><b>Валидация данных HTML5</b>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank">
 
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <input type="search" placeholder="Только русские буквы" pattern="^[А-Я][а-я]" name="IM" cols="40"><br>
-                        
-                        
-                        <input type="search" placeholder="+375-29-1234" pattern="^[+][375]-(25|29|33|34)([0-9]{3}([0-9]{2})([0-9]{2})">
-                        
+                        <input type="search" placeholder="+375-29-1234" pattern="^^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})"><br>
+                        <input type="submit" value="Проверить" />
                         
 
                 </fieldset>
