@@ -4,27 +4,54 @@
     <meta charset="UTF-8">
     <title>Lists and containers</title>
     <style>
-       
+       .container_one{
+        list-style-type:upper-roman;
+        
+       }
+       .inside{
+        list-style-type:lower-roman;
+        width: 350px;
+       }
+       .inside_2{
+        list-style-type:lower-roman;
+        width:350px
+       }
+       .code{
+        
+
+        width:400px;
+        background: black;
+        color:green;
+        overflow:auto;
+        max-height:4em
+       }
     </style>
     
 </head>
 <body>
-   <ul list-style:upper-roman;>
-    <li>I.CONTAINER WITH CODE
-        <ul>
-            <li>iblack</li>
-            <li>green</li>
-            <li>400px</li>
-
-        </ul>
-    </li>
-    <li>
-        <ul>II. LIST
-            <li>
-
-            </li>
-        </ul>
-    </li>
-   </ul>
+   <ol class="container_one">
+    <li><b>Контейнер с кодом</b></li>
+        <ol class="inside">
+            <li>Цвет фона черный</li>
+            <li>Цвет текста черный</li>
+            <li>Ширина: 400px</li>
+            <li>Максимальная высота контейнера: 4-е строки </li>
+            <li>Переполнение автоматическое</li>
+        </ol>
+    <li><b>Список</b></li>
+        <ol class="inside_2">
+            <li>Ширина 350px</li>
+            <li>Тип списка: римские цифры</li>
+            <li>Тип вложенного списка: римские нижний регистр цифры</li>
+        </ol>
+   </ol>
+   <div class="code">
+    <code >
+        #! /usr/bin/env python<br>
+        print 'Hello. I am a python program.<br>
+        hame = raw input ("What is your name&"<br>
+        print "Hello there,"+ name"!"
+    </code>
+   </div>
 </body>
 </html>
