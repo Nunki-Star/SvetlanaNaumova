@@ -5,28 +5,38 @@
     
     <title>Page with blocks</title>
     <style>
+        .parent{
+            background: grey;
+        }
+        .wrap{
+            background:rgb(203, 203, 203)
+        }
         
         .navigation{
             width:15em;
             background:rgb(176, 176, 176);
             float:left;
-          
+          }
+
+        .article1{
+           background:rgb(116, 115, 115);
+           margin-bottom:2em;
+           margin-left:15em
         }
-        
-            
-        .wrap{
-            background:rgb(203, 203, 203)
-        }
-        
-        .article{
-           
+
+        .article2{ 
             background:rgb(116, 115, 115);
             margin-bottom:2em;
-            clear:right;
             margin-left:15em
         }
-        
-        
+
+        .envelope{
+            margin-bottom:20px;
+            
+            float:right
+            
+        }
+
         .footer{
             height:auto;
             clear:both;
@@ -36,7 +46,9 @@
     </style>
 </head>
 <body>
-    <div class="navigation">
+    <div class="parent"></div>
+
+        <div class="navigation">
         <h4>Блок навигации</h4>
         <ul>
             <li>Ширина 15еm</li>
@@ -49,35 +61,36 @@
                 как показано в данном
                 примере</li>
                 </ul>
-            </div>
-            <div class="wrap">
-                <div class="article">
-                    <h4>Статья 1</h4>
-                    <arcticle>Размер блока:<br>
-                    Занимает всю доступную ширину<br>
-                    Должен присутствовать цвет фона<br>
-                    Во всех "статьях" сделайте отступ снизу от соседей равным .2ет, при помощи свойства margin-bottom</arcticle>
+        </div>
 
-                </div>
-                <div class="article">
-                    <h4>Статья 2</h4>
-                    <article>Размер блока:<br>
+        <div class="wrap">
+
+            <div class="article1">
+                <h4>Статья 1</h4>
+                <arcticle>Размер блока:<br>
                     Занимает всю доступную ширину<br>
                     Должен присутствовать цвет фона<br>
-                    Во всех "статьях" сделайте отступ снизу от соседей равным .2ет, при помощи свойства margin-
-                    bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
-                    данной статьи для этой картинки.       
-                    </article>
-                </div>
-                
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-bottom</arcticle>
             </div>
             
-        </div>
-        <div class="footer">
-            <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом</p>
-        </div >
+            <div class="envelope"><img src="message.png" width="60px" height="60px"></div> 
+            <div class="article2">
+                <h4>Статья 2</h4>
+                <article>Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-
+                    bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                    данной статьи для этой картинки.</article>
+            </div>
+                
         
-    </div>
-    
+            
+
+        <div class="footer">
+         <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентомhlkfksfkalfgksgflsdgfjgfesgflfgysgflasgfljsgfjlasgfjsadgfasj,fgjasgfakjsfgajkehfg</p>
+        </div >
+    </div>    
+   
 </body>
 </html>

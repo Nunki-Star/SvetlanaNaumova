@@ -6,58 +6,63 @@
     <style>
         .header{
             background:gray;
+            height:40px;
+            padding-top:17px;
+            align:center
+        }
+        .main{
+            background-color: beige;
+            padding:20px 20px;
+            width:700px;
+            float:left;
+         }
+        .main-block{
+            background-color:burlywood;
             height:50px
-            
-        }
-        .wrap{
-            background:rgb(233, 233, 166);
-            width:700px
-            float:left
-        }
+        }   
+        .mainblock_left{
+            float:left;
+            width:335px;
 
-        .content{
-            background:rgb(239, 239, 136);
-            height:90px
-        }
-        .one{
-            width:300px;
-            float:left
+        } 
+        .mainblock_right{
+            float:right;
+            width:335px
 
         }
-        .two{
-            width:300px;
-            float:right
-
-        }
-        .three{
+        .mainblock_bottom{
             clear:both;
-            margin-top: 20px
-            
+            margin-top: 20px;
+            margin-bottom: 20px;
+
         }
-        
+        .sidebar{
+            width:300px;
+            float:right;
+            background:greenyellow;
+        }
+        .parent{
+            width:1000px;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
+     <div class="parent">
         <div class="header">
-            <h2 align="center">шапка страницы</h2>
-        </div>
+            <h3>Шапка страницы</h3>
+         </div>
+         <div class="wrap">
+            <div class="main">
+                <h3>Основная часть</h3>
+                <div class="mainblock mainbolck_left"><h3>Часть 1</h3></div>
+                <div class="mainblock mainblock_right"><h3>Часть 2</h3></div>
+                <div class="mainblock mainblock_bottom"><h3>Часть 3</h3></div>
+            </div>
+            <div class="sidebar">
+                <h3>Боковая часть</h3>
+            </div>
+         </div>
+     </div>
 
-        <div class="wrap">
-            <div class="content">основная часть</div>
-                <div class="one">еще1</div>
-                <div class="two">еще2</div>
-                <div class="three">еще3</div>
-            <div class="banner">боковая часть</div>
-        </div>
-
-        <div class="footer">
-            <div>секция футера1</div>
-            <div>секция футера2</div>
-            <div>секция футера3</div>
-            <div>секция футера4</div>
-        </div>
-        
-    </div>     
 </body>
 </html>
