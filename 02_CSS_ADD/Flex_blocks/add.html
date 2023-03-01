@@ -2,10 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-   
-    <title>Document</title>
+    
+    <title>Page with blocks</title>
+    <style>
+        
+        .wrap{
+            background-color:#dbdbdb;
+            display: flex;
+            align-items: baseline;
+            flex-flow: row wrap;
+            align-content: flex-start;
+           
+          
+           
+        }
+
+        .navigation{
+            background-color:#cbcccb;
+            flex-basis:25%;
+            flex-grow:2;
+            height:300px
+            
+        }
+
+        .block_article{
+            align-items: baseline;
+            flex-flow:column wrap;
+            flex-basis:75%;
+           
+        }
+
+        .article1{
+            background:#aaaaaa;
+        }
+        .article2{
+            
+            background:#aaaaaa;
+
+        }
+        .envelope{
+            flex-direction: column;
+            align-self:flex-end;
+
+        }
+        
+            
+        .footer{
+            display:inline-flex;
+            background-color:#cbcccb;
+            
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div class="wrap">
+
+        <div class="navigation">
+        <h4>Блок навигации</h4>
+        <ul>
+            <li>Ширина 15еm</li>
+            <li>Должен присутствовать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните
+                контентом достаточным,
+                чтобы по высоте он начинал
+                захватывать вторую статью,
+                как показано в данном
+                примере</li>
+                </ul>
+        </div>
+
+        
+        <div class="block_article">
+            <div class="article1">
+                <h4>Статья 1</h4>
+                <arcticle>Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-bottom</arcticle>
+            </div>
+            
+            
+             <div class="article2">
+                    <div class="1"></div>
+                    <h4>Статья 2</h4>
+                    <article>Размер блока:<br>
+                    Занимает всю доступную ширину<br>
+                    Должен присутствовать цвет фона<br>
+                    Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-
+                    bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри<br>
+                    данной статьи для этой картинки.</article>
+                    <div class="envelope"><img src="message.png" width="60px" height="60px" alt="envelope"></div>
+                    
+                    
+              
+            </div>
+        </div>
+    </div>            
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ab ratione error illum quidem facilis ex cum velit, itaque quas repellat minima inventore rem assumenda architecto laudantium consequuntur deserunt facere!</p>
+    </div >
+      
+   
 </body>
 </html>
