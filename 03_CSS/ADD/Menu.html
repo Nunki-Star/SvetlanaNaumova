@@ -2,24 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        div.menu > div {width:100px; float:left; background-color: rgb(196, 193, 193); border: solid rgb(18, 18, 19) 1px;border-radius:5px; position: relative; cursor: pointer; }
-        div.menu > div:hover{background-color: rgb(89, 92, 91);color:whitesmoke}
-        div.submenu { width: 100px; display:none}
-        div.submenu > div { background-color: rgb(233, 133, 226); border:solid rgb(7, 7, 8)  1px; border-radius: 5px; cursor: pointer }
-        div.menu > div:hover div.submenu { display:block; position: absolute; left: 0; top: 90%; z-index: 1 ;}
-
-
-    @media all and (max-width:700px) {
-        div.menu { width: 100px }
-        div.submenu > div { background-color: yellow; border: solid blue 1px; position: relative; cursor: pointer }
-        div.submenu { width: 150px; display: none }
-        div.submenu > div {background-color: rgb(233, 133, 226); border: solid rgb(7, 7, 8) 1px; cursor: pointer }
-        div.menu > div:hover div.submenu { display: block; position: absolute; left: 100%; top: 20%; z-index: 1 }
-    }
+   
+    div.menu > div {width:100px; float:left; background-color: rgb(196, 193, 193); border: solid rgb(18, 18, 19) 1px;border-radius:5px; position: relative; cursor: pointer; }
+    div.submenu { width: 100px; height:0px; overflow:hidden}
+    div.submenu > div { background-color: rgb(233, 133, 226); border: solid rgb(7, 7, 8) 1px; border-radius: 5px; cursor: pointer }
+    div.menu > div:hover div.submenu { display:block; height:100px; position: absolute; left: 0%; top: 90%; z-index: 1 ; transition: 3s}
     </style>
    
 </head>
