@@ -2,15 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            
+        }
+
+        td{
+            text-align: left;
+            padding: 16px;
+            border-style: dotted;
+        }
+        th{
+            background-color: gray;
+            height:50px;
+            border: 1px ;
+            border: solid rgb(251, 248, 248);
+            border-bottom: dotted;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgoldenrodyellow;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(154, 122, 242);
+        }
+
+        tr:nth-child(even):hover{
+            background-color: lightskyblue;
+        }
+
+        tr:nth-child(odd):hover{
+            background-color: lightgreen;
+        }
+
+
+    </style>
 </head>
 <body>
+    <table>
+        <tr class="row">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рожд.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+    
+       <tr class="row">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>5667</td>
+            <td>00986</td>
+            </tr>
+
+        <tr class="row">
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>876569</td>
+            <td>5678798</td>
+         </tr>
+
+        <tr class="row">
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>6566</td>
+            <td>90900</td>
+        </tr>
+
+        <tr class="row">
+            <td>Пупин Федор Федорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1983</td>
+            <td>67654</td>
+            <td>5435</td>
+         </tr>
+
+        <tr class="row">
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1963</td>
+            <td>876587</td>
+            <td>g76554</td>
+        </tr>
+
+        <tr>
+            <td>данные о сотрудниках</td>
+        </tr>
+       
+    </table>
+    <button>no hided raws</button>
 
     <script   
         src="https://code.jquery.com/jquery-3.6.4.min.js"  
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="   
         crossorigin="anonymous"></script>
+      
+    <script>
+        $(document).ready(function($){
+
+            $(".row").on("click", function() {
+                $(this).hide()
+                $("button").text("show all raws");
+            })
+          
+            $("button").on("click", function(){
+                $(this).text("no hidden raws");
+                $(".row").show();
+
+            })
+        })
+
+    </script>
+
 </body>
 </html>
